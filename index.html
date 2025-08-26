@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Etordle "Bot"</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>"Etordle "Bot"</h1>
+
+  <div id="inputSection">
+    <input type="text" id="guessInput" placeholder="Enter tower acronym" maxlength="10" />
+    <button id="submitGuessBtn">Submit Guess</button>
+    <button id="deleteLastGuessBtn">Delete Last Guess</button>
+    <button id="calculateAvgGuessesBtn">Calculate Average Guesses</button>
+    <button id="findHardestBtn">Find Hardest Tower Against: </button>
+    <input type="text" id="hardestInput" placeholder="Enter tower acronym" maxlength="10" />
+  </div>
+
+  <h6 id="hardestOutput"></h6>
+
+  <h2>this is where ur guesses go</h2>
+  <div id="guessList"></div>
+
+  <h2>next guesses</h2>
+  <div id="nextGuessList"></div>
+
+  <script src="data.js"></script>
+  <script type="module" src="script.js"></script>
+  <script type="module" src="simulator.js"></script>
+</body>
+</html>
