@@ -1,0 +1,127 @@
+body {
+  font-family: Arial, sans-serif;
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 10px;
+  background-color: #fafafa;
+  color: #333;
+}
+h1, h2 {
+  text-align: center;
+  color: #333;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+#inputSection {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+}
+#guessInput {
+  font-size: 1.1em;
+  padding: 8px;
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.2s ease;
+}
+#hardestInput {
+  font-size: 1.1em;
+  padding: 8px;
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.2s ease;
+}
+#guessInput:focus {
+  border-color: #oo7bff;
+  outline: none;
+}
+button {
+  padding: 8px 16px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+button:hover {
+  background-color: #0056b3;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  background: white;
+  border-radius: 6px;
+  overflow: hidden;
+}
+th, td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+  font-size: 1em;
+}
+th {
+  background-color: #f8f9fa;
+  font-weight: 600;
+  color: #333;
+}
+tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+tbody tr:hover {
+  background-color: #e9ecef;
+  cursor: pointer;
+}
+#guessList, #nextGuessList {
+  max-height: 300px;
+  overflow-y: auto;
+  border: 1px solid #acacac;
+  padding: 10px;
+  margin-bottom: 20px;
+  backgroud: white;
+  border-radius: 6px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+#nextGuessList table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  background: rgb(241, 241, 241);
+  border-radius: 8px;
+  overflow: hidden;
+}
+#nextGuessList th, #candidateList td {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  text-align: center;
+  font-size: 0.95rem;
+}
+#nextGuessList th {
+  background-color: #007bff;
+  color: rgb(0,0,0);
+  font-weight: 600;
+  background: white;
+}
+#nextGuessList tbody tr:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+#nextGuessList tbody tr:hover {
+  background-color: #aebad3;
+  cursor: default;
+}
+#nextGuessList table tr:hover {
+  background-color: #ebebeb;
+}
+#hardestOutput {
+  font: Verdana;
+  font-size: medium;
+  text-align: center;
+}
